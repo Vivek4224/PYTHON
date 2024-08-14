@@ -9,13 +9,20 @@ num = 9
 #         else:
 #             print("*", end=' ')
 #     print()
+# for row in range(1,num+1):
+#     for col in range(1,num+1):
+#         if col % 2 == 0:
+#             if row == 1:
+#                 print("*", end=' ')
+#                 continue
+#             print(" ", end=' ')
+#         else:
+#             print("*", end=' ')
+#     print()  
+
+num=5
+
 for row in range(1,num+1):
     for col in range(1,num+1):
-        if col % 2 == 0:
-            if row == 1:
-                print("*", end=' ')
-                continue
-            print(" ", end=' ')
-        else:
-            print("*", end=' ')
-    print()  
+            print("*",end=' ')
+    print()    
