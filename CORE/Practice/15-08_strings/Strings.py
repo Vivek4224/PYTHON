@@ -25,7 +25,7 @@ str_name = ''''''
 # str_name=""" """
 # print(type(str_name))
 
-name="TOps Technology Pvt. Ltd."
+# name="TOps Technology Pvt. Ltd."
 
 # print(len(name))
 
@@ -33,7 +33,7 @@ name="TOps Technology Pvt. Ltd."
 
 # access full string
 
-print(name)
+# print(name)
 
 # Indexing [+/-]
 
@@ -77,7 +77,7 @@ pages=2500
 # print("vivek \\ barvaliya")
 # print("vivek b\\arvaliya")
 
-company="   tops TChnoLogy  pvT.   LtD. "
+# company="   tops TChnoLogy  pvT.   LtD. "
 
 # print(dir(company))
 # print(company.lower())
@@ -98,45 +98,101 @@ company="   tops TChnoLogy  pvT.   LtD. "
 # print(code.endswith("ON"))
 # print(code.endswith("on"))
 
-password = "Tops@123"
+# password = "Tops@123"
+# upr = False
+# m_upr = True
+# lwr = False
+# m_lwr = True
+# sc = False
+# m_sc = True
+# di = False
+# m_di = True
+
+# if len(password >= 8):
+#     for ch in password:
+#         # print(ch)
+#         if ch.isupper():
+#             upr = True
+#         else:
+#             if m_upr:
+#                 print("Atleast only one char must be upper case.")
+#                 m_upr = False
+#         if ch.islower():
+#             lwr = True
+#         else:
+#             if m_lwr:
+#                 print("Atleast only one char must be lower case.")
+#                 m_lwr = False
+#         if not ch.isalnum():
+#             sc = True
+#         else:
+#             if m_sc:
+#                 print("Atleast one special char must be there.")
+#                 m_sc = False
+#         if ch.isdigit():
+#             di = True
+#         else:
+#             if m_di:
+#                 print("Atleast only one digit must be there.")
+#                 m_di = False
+
+# if upr and lwr and sc and di:
+#     print("Strong Password")
+# else:
+#     print("Weak Password")
+
+password = "ACcVxss@123"
 upr = False
 m_upr = True
 lwr = False
 m_lwr = True
-sc = False
-m_sc = True
-di = False
-m_di = True
+sc=False
+m_sc=True
+di=False
+m_di=True
 
-if (len(password >= 8)):
+if len(password)>=8:
     for ch in password:
-        # print(ch)
         if ch.isupper():
             upr = True
+            m_upr = False  
+            continue
         else:
             if m_upr:
-                print("Atleast only one char must be upper case.")
-                m_upr = False
+                print("At least one char must be upper case.")
+                m_upr = False  
+
         if ch.islower():
             lwr = True
+            m_lwr = False 
+            continue
         else:
+        
             if m_lwr:
-                print("Atleast only one char must be lower case.")
-                m_lwr = False
+                print("At least one char must be lower case.")
+                m_lwr = False 
+
         if not ch.isalnum():
-            sc = True
+            sc=True
+            m_sc=False
+            continue
         else:
             if m_sc:
-                print("Atleast one special char must be there.")
-                m_sc = False
+                print("At least one special charachter must be in password.")
+                m_sc=False
+
         if ch.isdigit():
-            di = True
+            di=True
+            m_di=False
+            continue
         else:
             if m_di:
-                print("Atleast only one digit must be there.")
-                m_di = False
+                print("Print atleast one digit must be in password.")
+                m_di=False
 
-if upr and lwr and sc and di:
-    print("Strong Password")
+    if upr and lwr  and sc and di:
+        print("Strong Password")
+    else:
+        print("Weak Password")
 else:
-    print("Weak Password")
+    print("Password is min. 8 char")
