@@ -141,58 +141,100 @@ pages=2500
 # else:
 #     print("Weak Password")
 
-password = "ACcVxss@123"
-upr = False
-m_upr = True
-lwr = False
-m_lwr = True
-sc=False
-m_sc=True
-di=False
-m_di=True
+# password = "ACcVxss@123"
+# upr = False
+# m_upr = True
+# lwr = False
+# m_lwr = True
+# sc=False
+# m_sc=True
+# di=False
+# m_di=True
 
-if len(password)>=8:
-    for ch in password:
-        if ch.isupper():
-            upr = True
-            m_upr = False  
-            continue
-        else:
-            if m_upr:
-                print("At least one char must be upper case.")
-                m_upr = False  
+# if len(password)>=8:
+#     for ch in password:
+#         if ch.isupper():
+#             upr = True
+#             m_upr = False  
+#             continue
+#         else:
+#             if m_upr:
+#                 print("At least one char must be upper case.")
+#                 m_upr = False  
 
-        if ch.islower():
-            lwr = True
-            m_lwr = False 
-            continue
-        else:
+#         if ch.islower():
+#             lwr = True
+#             m_lwr = False 
+#             continue
+#         else:
         
-            if m_lwr:
-                print("At least one char must be lower case.")
-                m_lwr = False 
+#             if m_lwr:
+#                 print("At least one char must be lower case.")
+#                 m_lwr = False 
 
+#         if not ch.isalnum():
+#             sc=True
+#             m_sc=False
+#             continue
+#         else:
+#             if m_sc:
+#                 print("At least one special charachter must be in password.")
+#                 m_sc=False
+
+#         if ch.isdigit():
+#             di=True
+#             m_di=False
+#             continue
+#         else:
+#             if m_di:
+#                 print("Print atleast one digit must be in password.")
+#                 m_di=False
+
+#     if upr and lwr  and sc and di:
+#         print("Strong Password")
+#     else:
+#         print("Weak Password")
+# else:
+#     print("Password is min. 8 char")
+
+# fname="Vivek"
+# lname="Barvaliya"
+# print(fname+" "+lname)
+
+# name="Tops"*3
+# print(name)
+
+# star = "*"*1
+# print(star)
+# star = "*"*2
+# print(star)
+# star = "*"*3
+# print(star)
+# star = "*"*4
+# print(star)
+# star = "*"*5
+# print(star)
+
+# num = 5
+# for row in range(1, num+1):
+#     print(" "*(num-row), row*" *")
+
+# num = 5
+# for row in range(1, num+1):
+#     print(" "*(num-row), row*" *")
+
+name = "tOps technOlogiEs pvt. ltd.".lower()
+
+vowels = "aeiou"
+conso_count = 0
+special_symbols = 0
+for ch in name:
+    if ch not in vowels:
+        if ch.isalpha():
+            conso_count += 1
+        
         if not ch.isalnum():
-            sc=True
-            m_sc=False
-            continue
-        else:
-            if m_sc:
-                print("At least one special charachter must be in password.")
-                m_sc=False
-
-        if ch.isdigit():
-            di=True
-            m_di=False
-            continue
-        else:
-            if m_di:
-                print("Print atleast one digit must be in password.")
-                m_di=False
-
-    if upr and lwr  and sc and di:
-        print("Strong Password")
-    else:
-        print("Weak Password")
-else:
-    print("Password is min. 8 char")
+            special_symbols += 1
+print(conso_count)
+print(special_symbols)
+print(len(name) - conso_count - special_symbols)
