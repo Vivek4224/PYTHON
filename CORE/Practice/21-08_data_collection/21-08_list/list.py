@@ -158,6 +158,14 @@ my_list = [3, 1, 2]
 my_list.sort()
 print(my_list)  # આઉટપુટ: [1, 2, 3]
 
-
 """
+nested_list = [1,2, [3, [4,5, [8,9,[11, 23, [56,[18, 12, [13]]]]]], 6]]
+print(nested_list)
+print(nested_list[-1])
+print(nested_list[-1][1])
+print(nested_list[-1][1][-1][-1])
+print(nested_list[-1][1][-1][-1][-1])
+print(nested_list[-1][1][-1][-1][-1][-1])
+print(nested_list[-1][1][-1][-1][-1][-1][-1])
+print(nested_list[-1][1][-1][-1][-1][-1][-1][0])
 
