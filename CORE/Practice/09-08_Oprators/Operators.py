@@ -2,7 +2,7 @@
 1. What is Operators ?
 ans: Operators in Python are special symbols or keywords that perform operations on variables and values. They are used to manipulate data and variables, enabling you to perform computations, comparisons, and logical operations.
 
-પાયથોનમાં ઓપરેટર્સ એ વિશિષ્ટ પ્રતીકો અથવા કીવર્ડ્સ છે જે variable અને value પર કામગીરી કરે છે. તેનો ઉપયોગ ડેટા અને variable ની હેરફેર કરવા માટે થાય છે, જે તમને ગણતરીઓ, સરખામણીઓ અને logical કામગીરી કરવા સક્ષમ બનાવે છે.
+પાયથોનમાં ઓપરેટર્સ એ special symbols અથવા keywords છે જે variable અને value પર કામગીરી કરે છે. તેનો ઉપયોગ ડેટા અને variable ની હેરફેર કરવા માટે થાય છે, જે તમને ગણતરીઓ, સરખામણીઓ અને logical કામગીરી કરવા સક્ષમ બનાવે છે.
 
 Arithmetic Operators: Used to perform mathematical operations.
 
