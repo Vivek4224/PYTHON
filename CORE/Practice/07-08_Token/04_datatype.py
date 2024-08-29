@@ -6,7 +6,7 @@ ans: A datatype is a classification that specifies which type of value a variabl
 
                             Datatype
                                 |
-              ------------------------------------                           
+              ------------------------------------                          
               |                                  |
            prmitive                       non-primitive
        -----------------           ----------------------------
