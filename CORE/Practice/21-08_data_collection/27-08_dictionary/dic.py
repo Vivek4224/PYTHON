@@ -9,6 +9,8 @@ dict_name = {
     .
     .
 }
+
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
 """
 
 contacts = {
@@ -102,3 +104,23 @@ mango_shake = {
 # mango_shake.update({'sugar':2.0})
 # mango_shake.update({'kaju-badam-pista':200.0})
 # print(mango_shake)
+
+"""
+'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+"""
+
+# name={
+#     'student1':'vivek',
+#     'student2':'barvaliya'
+# }
+# name.clear()
+# name.copy()
+# name.fromkeys(name,0)
+# name.get('student1')
+# mango_shake.keys()
+# mango_shake.pop('milk')
+# mango_shake.popitem()
+# mango_shake.setdefault('c',2)
+# mango_shake.update({'choco': 2.5})
+mango_shake.values()
+print(mango_shake)

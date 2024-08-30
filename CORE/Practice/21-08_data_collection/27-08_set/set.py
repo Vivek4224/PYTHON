@@ -4,6 +4,8 @@ Set : mutable, unordered, unindexed, slicing is not allowed, duplicate values ar
 syntax:
 set_name = {} 
 set_name = {1,2,3,4,4} 
+
+ 'add', 'clear', 'copy', 'difference', 'difference_update', 'discard', 'intersection', 'intersection_update', 'isdisjoint', 'issubset', 'issuperset', 'pop', 'remove', 'symmetric_difference', 'symmetric_difference_update', 'union', 'update'
 """
 
 set_name={1,2,3,4,4,564,34,65,78,2,6,78,3,478,2,37,89,89,45,8,61,368,78}
@@ -35,4 +37,7 @@ set_name = {1, 2, 3, 4, 564, 34, 65, 78, 478, 37, 89, 45, 8, 61, 368}
 # nums_frozenset = frozenset(nums)
 # nums_frozenset.add(6) # AttributeError: 'frozenset' object has no attribute 'add'
 # print(nums_frozenset)
+
+d=set()
+print(dir(d))
 

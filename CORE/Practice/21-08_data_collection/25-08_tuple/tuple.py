@@ -24,7 +24,7 @@ nums=(1,2,3,4,5)
 # nums[2]=33
 # print(nums)
 
-nums=tuple(list(range(1,11)))
-# print(nums[0])
-nums.insert(0,1)
-print(nums)
+# nums=tuple(list(range(1,11)))
+# # print(nums[0])
+# nums.insert(0,1)
+# print(nums)
