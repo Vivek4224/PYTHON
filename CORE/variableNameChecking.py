@@ -1,1 +1,1 @@
-print("myVarieble".isprintable())  
+print("myVarieble".isprintable())   
