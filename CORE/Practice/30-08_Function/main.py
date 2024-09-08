@@ -57,12 +57,12 @@ Type Of paras
     # - **kwargs
 # def add(*nums):
 #     print(sum(nums))
-#     # print(type(nums))
+#     print(type(nums))
 
 # add(1,2,3,4, 100, 1000)
 
 # def bill(**products):
-#     # print(type(products))
+#     print(type(products))
 #     total = 0
 #     for key, value in products.items():
 #         print(f"{key} price is: {value}")
