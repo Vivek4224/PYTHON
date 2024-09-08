@@ -29,7 +29,7 @@ git commands:
 👉 git remote -v
 
 3] project commands for pip
-
+    
 👉 Check installed modules and packages
 pip list/pip freeze
 
