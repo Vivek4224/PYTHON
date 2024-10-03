@@ -7,7 +7,7 @@ num1 = int(input("Please Enter a num 1:- "))
 num2 = int(input("Please Enter a num 2:- "))
 num3 = int(input("Please Enter a num 3:- "))
 
-if num1 == num2 == num3:
+if (num1 == num2) or (num1 == num3) or (num2 == num3):
     total = 0
     print(f"Total = {total}")
 else:

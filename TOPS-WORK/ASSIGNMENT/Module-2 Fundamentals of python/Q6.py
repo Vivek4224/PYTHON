@@ -8,9 +8,9 @@ without temp variable.
 a = float(input("Enter the first number: "))
 b = float(input("Enter the second number: "))
 
-temp = a
+c = a
 a = b
-b = temp
+b = c
 
 print("After swapping:")
 print("First number:", a)

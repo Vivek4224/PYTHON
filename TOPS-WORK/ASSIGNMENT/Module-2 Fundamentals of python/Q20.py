@@ -3,14 +3,14 @@ Write a Python function that takes a list of words and returns the length
 of the longest one.
 """
 
-def length_of_longest_word(words):
-    if not words:
-        return 0
-    
-    lengths = [len(word) for word in words]
-    
-    return max(lengths)
+def longest_word_len(words):
+    longest_len = 0  
+    for word in words:
+        if len(word) > longest_len:  
+            longest_len = len(word) 
+    return longest_len  
 
-if __name__ == "__main__":
-    words_list = ["apple", "banan", "cherr", "date"]
-    print("The length of the longest word is:", length_of_longest_word(words_list))
+list = ["apple", "banana", "cherry", "date"]
+length = longest_word_len(list)
+print(f"The length of the longest word is: {length}")
+
