@@ -5,13 +5,13 @@ should be at least 3). If the given string already ends with 'ing' then add
 unchanged.
 """
 
-input_string = input("Enter a string: ")
+input_str = input("Enter a string: ")
 
-if len(input_string) < 3:
-    result = input_string
-elif input_string.endswith('ing'):
-    result = input_string + 'ly'
+if len(input_str) < 3:
+    result = input_str
+elif input_str.endswith('ing'):
+    result = input_str + 'ly'
 else:
-    result = input_string + 'ing'
+    result = input_str + 'ing'
 
 print(result)
